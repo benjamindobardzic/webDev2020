@@ -2,23 +2,80 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+   
 }
 
-main{
-    
+html,body{
+    scroll-behavior: smooth;
 }
-
-
-h1{
-    font-size: 3.5rem!important;
-}
-
 :root {
     --montserratFont:'Montserrat', sans-serif;
     --latoFont: 'Lato', sans-serif;
     --myBlue:#254E70;
     --myOrange:#FFBA49;
-    
+}
+
+h1{
+    font-size: 3.5rem!important;
+    font-family: var(--montserratFont);
+}
+
+p{
+    font-family: var(--latoFont);
+}
+a{
+    text-decoration: none; 
+}
+a:hover{
+    text-decoration: none!important
+}
+.unicaFont{
+    font-family: "Unica one",sans-serif;
+}
+
+
+/*Navbar*/
+.navbar{
+    margin-bottom:-100px;
+    z-index: 2;
+    border-bottom: 1px solid rgba(207, 207, 207, 0.418);
+    padding: 10px 10%!important;
+}
+.nav-link{
+    color: white!important;
+    font-family: var(--montserratFont);
+    font-weight: 700;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+.nav-link:hover{
+    color: var(--myOrange)!important;
+    transform: scale(1.05);
+    border-bottom: .2px solid var(--myOrange);
+}
+.login{
+    cursor: pointer;
+    display: flex;
+    border: .3px solid rgba(204, 204, 204, 0.678);
+    padding: 5px 20px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+.login:hover{
+    background-color: var(--myOrange);
+    transform: scale(1.06);
+}
+.login:hover i{
+    color: white;
+}
+.login p{
+   color: white;
+   font-family: var(--montserratFont);
+   font-weight: 700;
+   padding:0!important;
+}
+.login i{
+    color: var(--myOrange);
 }
 
 
@@ -76,6 +133,396 @@ h1{
     font-family: var(--montserratFont);
     color: #9e9e9e;
 }
+#aboutUs h6{
+    font-family: var(--latoFont);
+    font-weight: 300;
+    letter-spacing: 1px;
+    
+}
+
+/*Movies slider -------------------------------------------*/
+    ul{
+        list-style: none;
+    }
+    .sectionHeaderIcon{
+        color: var(--myOrange);
+        font-size: 2rem;
+    }
+    .box h4{
+        font-family: var(--latoFont);
+        font-size: 2rem;
+        
+    }
+    .box{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 5px;
+        transition: 0.2s;
+    } 
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        height: 300px;
+        padding-bottom: 20px;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.13);
+        background-color: rgb(240, 240, 240);
+    }
+    .box:hover{
+        transform: scale(1.02);
+        cursor: pointer;
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.13);
+    }
+    .box button{
+        border: 1px solid var(--myOrange);
+        outline: none;
+        color: rgb(48, 48, 48);
+        background-color: transparent;
+        padding: 5px 20px;
+        font-family: var(--montserratFont);
+        font-size: 0.9rem;
+       transition: 0.3s;
+       height: 50px ;
+    }
+   
+    .box button:hover{
+        color: white;
+        background-color: var(--myOrange);
+        transform: scale(1.1);   
+    }
+    
+    .box img{
+       height: 500px;
+        max-height: 100%;
+        width: 350px;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.13);
+    }
+    
+    .details p{
+        font-family: var(--latoFont);
+        text-align: center;
+       padding: 0px 30px;
+       height: 150px;
+    }
+    .details h4{
+        font-family: var(--montserratFont);
+        font-weight: 700;
+        margin-top: 20px;
+        color: #181818;
+        height: 100px;
+    }
+   
+    
+/*Slider endssssssssss*/
+
+/*References----------------------------------------------*/
+.references{
+    background-image: url('https://cdn.wallpapersafari.com/73/59/V06ozM.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.referencesText{
+    padding: 100px 0px;
+}
+.referencesText p{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    font-family: var(--montserratFont);
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: white;
+}
+.references .row{
+    text-align: center;
+}
+.counter{
+    font-size: 3rem;
+    font-family: var(--montserratFont);
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+}
+.references{
+    margin: 100px 0px;
+}
 
 
 
+
+
+/*FAQ -------------------------------------------*/
+
+.frequenltyAsked h1::after{
+    content: "\003F";
+    font-size: 1rem;
+    color: var(--myOrange);
+    transform: rotate(45deg);
+    font-weight: 700;
+}
+/*ACCORDION*/
+
+.accordionButton{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: white;
+    color: #000000;
+    font-family: var(--montserratFont);
+    text-align: left;
+    transition: background 0.2s ;
+    border-radius: 2px;
+}
+
+.accordionButton::after{
+    content: '\25be';
+    float: right;
+    transform: scale(1.5);
+}
+
+.accordionButtonActive{
+    background: #fcc266;
+
+}
+.accordionButtonActive::after{
+    content: '\25b4'
+}
+
+.accordionContent{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
+    padding: 0 15px;
+    font-family: var(--latoFont);
+    background-color: #f7f7f7;
+}
+
+.frequenltyAsked{
+    margin: 30px auto;
+    padding: 50px 0px 200px 0px;
+}
+
+hr{
+    margin:0!important;
+}
+
+.frequenltyAsked{
+    border-top-left-radius: 10px;
+}
+
+
+
+/*Contact us--------------------------------------- */
+.contactUs{
+    width: 80%;
+    margin: 100px auto;
+}
+.contactUs i{
+   position: relative;
+   left: 50%;
+   right: 50%;
+}
+
+.recommendedMovie{
+    width: 50%;
+}
+.contactUs h4{
+    font-family: var(--montserratFont);
+    margin:20px 0px 20px 0px!important;
+    color: #5f5f5f;
+}
+
+.contactUs label{
+    font-family: var(--latoFont);
+    color: rgb(119, 119, 119)!important;
+    font-size: 0.8rem; 
+}
+.contactUs p{
+    font-family: var(--latoFont);
+    color: rgb(119, 119, 119)!important;
+    font-size: 0.8rem; 
+}
+.contactUs>p:first-of-type{
+    font-family: "Unica one";
+    font-size: 1rem;
+}
+
+/*Footer---------------------------------------------*/
+footer{
+    background-color: #1d1d1d;
+    padding: 50px 0px 0px 0px;
+}
+/*newsletter*/
+.newsletter{
+    font-family: var(--montserratFont),sans-serif;
+    text-align: center;
+    
+}
+.newsletter p{
+    max-width: 50%;
+    margin: 10px auto 20px auto;
+    font-family: var(--latoFont);
+    color: white;
+}
+.newsletter h2{
+    color: var(--myOrange);
+    font-weight: 700;
+
+}
+.email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.email-box i{
+    background: var(--myOrange);
+    width: 40px;
+    line-height: 40px;
+
+}
+
+.tbox,.subscribeBtn{
+    border: none;
+    outline: none;
+}
+.tbox{
+    width: 0px;
+    transition: 0.6s;
+}
+.email-box:hover > .tbox,.tbox:focus{
+    width: 260px;
+    padding: 0px 10px;
+}
+.subscribeBtn{
+    background: #000000;
+    color: white;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.container-fluid{
+    padding : 0px!important;
+}  
+
+.footerDetails{
+    padding: 0px 20px;
+    margin: 50px 0px 100px 0px;
+}
+.footerDetails h1{
+    font-family: "Unica one", sans-serif;
+    
+}
+.footerDetails p{
+    font-family: var(--montserratFont);
+}
+.footerDetails h5{
+    font-family: var(--montserratFont);
+    font-weight: 700;
+    color: white;
+}
+.footerDetails a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--montserratFont);
+    font-size: 0.8rem;
+}
+.footerDetails a:hover{
+    color: var(--myOrange);
+    text-decoration: none;
+}
+.footerDetails p{
+    color: white;
+    font-family: var(--montserratFont);
+    font-size: 0.8rem;
+}
+.footerDetails i{
+    color: var(--myOrange);
+}
+.footerDetails i:hover{
+    cursor: pointer;
+    color: white;
+    transform: scale(1.2);
+}
+.bottomFooter{
+    background-color: #111111;
+    padding: 20px 0px;
+}
+.bottomFooter p{
+    margin: 0!important;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .myCarousel img{
+        height: auto;
+    }
+    .carousel-caption h1{
+        font-size: 2rem!important;
+    }
+    .carousel-caption p{
+        font-size: 1rem!important;
+    }
+    .navbar{
+        margin-bottom:0;
+       background-color: black; 
+    }
+    .nav-link{
+        border-bottom: .1px solid rgba(255, 255, 255, 0.575);
+    }
+    .login{
+        margin-top: 20px;
+        width: 30%;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    .myCarousel img{
+        height: auto;
+    }
+    .carousel-caption h1{
+        font-size: 2rem!important;
+    }
+    .carousel-caption p{
+        font-size: 1rem!important;
+    }
+   
+  }
+ 
+
+
+@media only screen and (max-width: 500px) {
+    .myCarousel img{
+        height: auto;
+    }
+    #backgroundAbout{
+        font-size: 6rem!important;
+        
+    }
+   
+  }
+
+ @media only screen and (max-width: 375px) {
+    .myCarousel img{
+        height: auto;
+    }
+    .carousel-caption h1{
+        font-size: 1rem!important;
+    }
+    .carousel-caption p{
+        font-size: .7rem!important;
+    } 
+    #backgroundAbout{
+        font-size: 4rem!important;
+        margin-top: 150px;
+    }
+   
+   
+  }

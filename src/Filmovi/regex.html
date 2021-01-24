@@ -1,0 +1,15 @@
+<form action="asdas.php" method ="POST" onsubmit="provjeri()">
+<input type="number" id = 'text'>
+<button type = "submit"></button>
+</form>
+<script>
+    function provjeri(){
+        tekst = document.getElementById("text");
+        regex = /\d/;
+        document.write(tekst.value);
+        if (tekst.value>10||tekst.value<1){
+            document.write("Uneseni broj nije dobar")
+        }
+    }
+
+</script>
