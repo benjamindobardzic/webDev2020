@@ -172,7 +172,7 @@ mysqli_close($database)
         <!--movies-->
         <div id="movies" class="container mt-5 mb-5 text-center">
             <i class="fas fa-film sectionHeaderIcon"></i>
-            <h1>The best movies</h1>
+            <h1>The best</h1>
             <p class="unicaFont">You can check movies we have over here. Just slide right or left!</p>
             <ul id="autoWidth" class="cs-hidden">
                 <?php
