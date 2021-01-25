@@ -1,0 +1,113 @@
+form{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid white;
+    padding: 50px 0px;
+    position: relative;
+}
+h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fcbc56;
+    transform: rotate(-45deg);
+    color: black;
+    padding: 3px 15px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    font-size: 0.6rem;
+    
+}
+
+form div{
+    align-self: left;
+}
+form label{
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    padding: 0px 30px;
+    text-align: left;
+}
+form div{
+    margin: 20px;
+    text-align: left;
+}
+h3{
+    margin: 20px 0px 60px 0px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: white;
+   width: 70%;
+    text-align: center;
+}
+form input, form input:not(:last-child){
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    transition: 1s;
+}
+form input:focus{
+    border-bottom-color: #FFBA49;
+    transform: scale(1.05);
+   
+}
+form input[type="text"]{
+    color: white;
+}
+
+form input[type="number"]{
+    color: white;
+}
+form textarea{
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    margin: 20px 0px;
+}
+
+form input[type="file"]{
+    color: white;
+    border:none
+}
+form p{
+    color: white;
+
+}
+
+.submit{
+    color: black;
+    border: 1px solid white;
+    background-color: #FFBA49;
+    padding: 5px 20px;
+    width: 60%;
+    border-radius: 3px;
+    transition: 0.5s;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.submit:hover{
+    transform: scale(1.05);
+    background-color: #fcbc56;
+}
+
+@media only screen and (max-width: 770px) {
+    form{
+        width: 90%;
+    }
+    form div{
+        display: flex;
+        flex-direction: column;
+    }
+   
+  }
