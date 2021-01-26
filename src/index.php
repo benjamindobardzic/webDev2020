@@ -63,6 +63,12 @@ mysqli_close($database)
                         </li>
 
                     </ul>
+                    <div class="search mr-4">
+                        <form action="POST" method="./Filmovi/pretraga.php">
+                            <input type="text" value="" placeholder="Unesite naziv filma za pretragu">
+                            <input type="submit" value="Search">
+                        </form>
+                    </div>
                     <a href="./Filmovi/admin_login.php">
                         <div class="login">
                             <p class="p-0 m-0">Login</p>
@@ -187,7 +193,7 @@ mysqli_close($database)
                             <a href="movie.php?id=<?php echo $f['id']; ?>">See more</a>
                             </div>
                         </div>
-                        </li>
+                    </li>
                 <?php } ?>
 
                 <!-- <li class="item-a">

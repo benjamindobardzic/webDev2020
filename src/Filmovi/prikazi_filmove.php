@@ -21,6 +21,15 @@ if (isset($_POST['delete'])) {
 	$_SESSION['id'] = $_POST['id'];
 	header("location:brisanje_filma.php");
 }
+if(isset($_POST['izmjeni'])){
+		if(!isset($_POST['id_izmjeni'])||!is_numeric($_POST['id_izmjeni'])){
+		
+			die("Nevalidan id filma");
+		}
+		$_SESSION['id_izmjeni'] = $_POST['id_izmjeni'];
+		header("location:izmjeni_film.php");
+		
+	}
 mysqli_close($database);
 
 ?>
@@ -67,7 +76,12 @@ mysqli_close($database);
 					<form action='prikazi_filmove.php' method='POST'>
 						<input type='hidden' name='id' value=" . "'" . $f['id'] . "'" . "/>
 						<div class='delete'><button type='submit' name='delete'> Obrisi </button><i class='far fa-trash-alt'></i></div>
-					</form> </div>";
+					</form> 
+					<form action='prikazi_filmove.php' method='POST'>
+						<input type='hidden' name='id_izmjeni' value="."'".$f['id']."'"."/>
+						<button class='delete' type='submit' name='izmjeni'> Izmjeni </button>
+					</form></div>";
+					
 			}
 			?></div>
 	

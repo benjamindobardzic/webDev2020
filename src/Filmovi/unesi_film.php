@@ -83,8 +83,16 @@ if (isset($_POST['submit'])) {
 			</div>
 			<div>
 				<label for="zanr-filma"> Zanr filma: </label>
-				<input type="text" id="zanr-filma" name="zanr_filma" required>
-			</div>
+					<select name="zanr_filma">
+					<option value = "Akcioni">Akcioni</option>
+					<option value = "Ljubavni">Ljubavni</option>
+					<option value = "Komedija">Komedija</option>
+					<option value = "Triler">Triler</option>
+					<option value = "Drama" selected>Drama</option>
+					<option value = "Dokumentarac">Dokumentarac</option>
+					<option value = "Fantastika">Fantastika</option>
+					<option value = "Psiholoski">Psiholoski</option>
+				</select>			</div>
 			<div>
 				<label for="Ocjena-filma"> Ocjena filma: </label>
 				<input type="number" id="ocjena-filma" name="ocjena_filma" required>
