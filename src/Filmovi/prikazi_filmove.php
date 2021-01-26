@@ -79,7 +79,7 @@ mysqli_close($database);
 					</form> 
 					<form action='prikazi_filmove.php' method='POST'>
 						<input type='hidden' name='id_izmjeni' value="."'".$f['id']."'"."/>
-						<button class='delete' type='submit' name='izmjeni'> Izmjeni </button>
+						<div class='change'><button type='submit' name='izmjeni'> Izmjeni </button><i class='fas fa-exchange-alt'></i></div>
 					</form></div>";
 					
 			}

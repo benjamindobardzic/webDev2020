@@ -167,7 +167,6 @@ a:hover{
         
     }
     .box{
-       
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -187,11 +186,11 @@ a:hover{
     }
     .box:hover{
         transform: scale(1.02);
-        cursor: pointer;
+        cursor: grab;
         box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.13);
     }
-    .box button{
-        border: 1px solid var(--myOrange);
+    .box a{
+        border: 1px solid var(--myOrange)!important;
         outline: none;
         color: rgb(48, 48, 48);
         background-color: transparent;
@@ -199,17 +198,20 @@ a:hover{
         font-family: var(--montserratFont);
         font-size: 0.9rem;
        transition: 0.3s;
-       height: 50px ;
+       font-family: var(--montserratFont),sans-serif;
+       font-weight: 700;
+       background-color: var(--myOrange);
     }
    
-    .box button:hover{
+    .box a:hover{
         color: white;
         background-color: var(--myOrange);
-        transform: scale(1.1);   
+        transform: scale(1.1);  
+        background-color: #ff9d00; 
     }
     
     .box img{
-       height: 500px;
+       height: 300px;
         max-height: 100%;
         width: 350px;
         box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.13);

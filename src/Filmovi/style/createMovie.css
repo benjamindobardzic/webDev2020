@@ -95,7 +95,15 @@ form p{
     font-weight: 700;
     font-size: 1.4rem;
 }
-
+select{
+    outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fcbc56;
+}
+option{
+    color: black;
+}
 .submit:hover{
     transform: scale(1.05);
     background-color: #fcbc56;

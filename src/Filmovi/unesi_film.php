@@ -35,6 +35,8 @@ if (isset($_POST['submit'])) {
 	} else {
 		$porukica = "Postavljanje filma nije bilo uspjesno, provjerite da li ste unijeli sve potrebne podatke?";
 	}
+
+	header("Location: ./pocetna.php?blerdijan");
 }
 ?>
 <!doctype html>

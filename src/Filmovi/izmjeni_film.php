@@ -62,12 +62,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@200;400;800&family=Unica+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="stylesheet" href="./style/navigation.css">
+	<link rel="stylesheet" href="./style/createMovie.css">
+	
   </head>
-  <body>
+  <body style="background-color: black;">
+  <div class="navigation">
+
+		<div class="goBack">
+			<i class="fas fa-angle-double-left"></i>
+			<a href="../Filmovi/pocetna.php">Nazad</a>
+		</div>
+
+		<div class="logout">
+			<i class="fas fa-sign-out-alt"></i>
+			<a href="../index.php">Logout</a>
+		</div>
+	</div>
      	<div id="content" class="container">
 		<div id="error" style="color:red"></div>
 		<form action="izmjeni_film.php" method="post" enctype="multipart/form-data" id="forma" name="form">
+		<h2>UPDATE A MOVIE</h2>
+		<h3>Promijenite podatke koje želite:</h3>
 			<input type="hidden" name="size" value="1000000">
 			<div>
 				<label for="ime-filma"> Ime filma: </label>
@@ -77,6 +97,7 @@
 				<label for="zanr-filma"> Zanr filma: </label>
 				<!--<input type="text" id="zanr-filma" name="zanr_filma" value= ""required>-->
 				<select name="zanr_filma" id="zanr-filma">
+	
 					<option value = "Akcioni"<?php if($film['zanr_filma']=="Akcioni"){echo 'selected="selected"';}?>>Akcioni</option>
 					<option value = "Ljubavni"<?php if($film['zanr_filma']=="Ljubavni"){echo 'selected="selected"';}?>>Ljubavni</option>
 					<option value = "Komedija"<?php if($film['zanr_filma']=="Komedija"){echo 'selected="selected"';}?>>Komedija</option>
@@ -100,7 +121,7 @@
 				</div>
 				<input type="file" name="image" id="slika" multiple onchange="procesuirajfajl(this)">
 			</div>
-			<input type="submit" name="izmjeni" value="Izmjeni">
+			<input class="submit" type="submit" name="izmjeni" value="Izmjeni">
 		</form>
 	</div>
     <!-- Optional JavaScript -->

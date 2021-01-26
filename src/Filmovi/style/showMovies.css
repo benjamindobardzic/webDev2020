@@ -9,7 +9,6 @@
     text-align: center;
     border: 1px solid white;
     margin: 30px auto;
-    height:900px;
     color: white;
     margin: 50px;
     padding: 20px 50px;
@@ -20,6 +19,7 @@
     width: auto;
     height: 200px ;
 }
+
 .box h1{
     font-family: "Montserrat",sans-serif;
     font-weight: 700;
@@ -46,4 +46,18 @@
 .delete:hover{
     transform: scale(1.1);
     background-color: red;
+}
+
+.change{
+    background-color: #FFBA49;
+     cursor: pointer;
+    width: 30%;
+    margin: 20px auto;
+    font-family: "Montserrat",sans-serif;
+    transition: .3s;
+     border-radius: 3px;
+}
+.change:hover{
+    transform: scale(1.1);
+    background-color: #ff9d00;
 }
