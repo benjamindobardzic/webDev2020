@@ -4,7 +4,8 @@ session_start();
 $database = mysqli_connect("localhost", "root", "");
 mysqli_select_db($database, "filmovi");
 
-$kveri = "SELECT * FROM `slike` LIMIT 8";
+$kveri = "SELECT id, ime_filma,zanr_filma, ocjena, SUBSTRING(`sadrzaj`, 1, 150) AS sadrzaj, slika FROM `slike` LIMIT 8";
+
 
 $final = mysqli_query($database, $kveri);
 
@@ -182,7 +183,7 @@ mysqli_close($database)
                         <img src="./Filmovi/slike/<?php echo $f['slika']; ?>"/>
                             <div class='details'>
                             <h4><?php echo $f['ime_filma'];?></h4>
-                            <p><?php echo $f['sadrzaj'];?></p>
+                            <p><?php echo $f['sadrzaj'];?>...</p>
                             <a href="movie.php?id=<?php echo $f['id']; ?>">See more</a>
                             </div>
                         </div>
