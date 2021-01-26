@@ -44,6 +44,10 @@ body{
     color: black;
     transform: scale(1.05);
 }
+.error{
+    color: red!important;
+    background-color: red!important;
+}
 
 @media only screen and (max-width: 1100px) {
   .login-box{

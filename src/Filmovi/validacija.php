@@ -18,7 +18,7 @@
 		header('location:pocetna.php');
 	
 	}else{
-		header('location:login.php');
+		header('location:admin_login.php?info=wrongCredentials');
 	}
 
 

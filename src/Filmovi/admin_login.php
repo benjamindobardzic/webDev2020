@@ -23,7 +23,11 @@
                 <p>Username:Bendza</p>
                 <p>Sifra:12345</p>
             </div>
-            <div id="error"></div>
+           
+
+            <div style="color: red;" class="error"> <?php if(isset($_REQUEST['info'])) {
+                echo "Niste dobro unijeli password ili username!";
+            } ?></div>
             <form action="validacija.php" method="post">
                 <div class="form-group">
                     <label>Vaše korisničko ime:</label>
