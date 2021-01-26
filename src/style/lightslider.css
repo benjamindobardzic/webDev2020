@@ -157,6 +157,8 @@
     height: 32px;
     background-image: url('../img/right.png');
     cursor: pointer;
+    background-color: #FFBA49;
+    padding: 10px;
     position: absolute;
     z-index: 99;
     margin-top: -16px;

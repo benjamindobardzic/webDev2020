@@ -4,7 +4,7 @@ session_start();
 $database = mysqli_connect("localhost", "root", "");
 mysqli_select_db($database, "filmovi");
 
-$kveri = "SELECT * FROM `slike` LIMIT 5";
+$kveri = "SELECT * FROM `slike` LIMIT 8";
 
 $final = mysqli_query($database, $kveri);
 
@@ -175,21 +175,20 @@ mysqli_close($database)
             <h1>Movies</h1>
             <p class="unicaFont">You can check movies we have over here. Just slide right or left!</p>
             <ul id="autoWidth" class="cs-hidden">
-                <?php
-                foreach ($filmovi as $f) {
-                    echo "<li class='item-a'>
+                <?php foreach($filmovi as $f){?>
+                
+                    <li class='item-a'>
                         <div class='box'>
-                        <img src="."'"."Filmovi/slike/".$f['slika']."'"."/>
+                        <img src="./Filmovi/slike/<?php echo $f['slika']; ?>"/>
                             <div class='details'>
-                            <h4>" . $f['ime_filma'] . "</h4>
-                            <p>" . $f['sadrzaj'] . "</p>
-                            <button type=button>See more</button>
+                            <h4><?php echo $f['ime_filma'];?></h4>
+                            <p><?php echo $f['sadrzaj'];?></p>
+                            <a href="movie.php?id=<?php echo $f['id']; ?>">See more</a>
                             </div>
                         </div>
-                        </li>";
-                }
+                        </li>
+                <?php } ?>
 
-                ?>
                 <!-- <li class="item-a">
                     <div class="box">
                         <img src="https://motivatevalmorgan.com/wp-content/uploads/2019/11/Gear-Up-For-The-Level-Up-Jumanji-The-Next-Level-1024x512.png"
