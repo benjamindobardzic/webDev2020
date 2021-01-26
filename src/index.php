@@ -729,6 +729,7 @@ mysqli_close($database)
     <script src="./js/JQuery3.3.1.js"></script>
     <script src="./js/lightslider.js"></script>
     <script src="./js/mySlider.js"></script>
+    <script src="./js/fixedNav.js"></script>
 </body>
 
 </html>

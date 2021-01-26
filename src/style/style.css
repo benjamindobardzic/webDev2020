@@ -77,7 +77,20 @@ a:hover{
 .login i{
     color: var(--myOrange);
 }
+.navbar{
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 1s;
+    z-index: 10000;
+    height: 100px;
+}
 
+.navbar.sticky{
+    background-color: black;
+    height: 50px;
+}
 
 /*Carouse*/
 .myCarousel img{
