@@ -1,0 +1,62 @@
+body{
+    background-image: url('https://wallpaperaccess.com/full/396602.jpg');
+}
+
+.login-box{
+    width: 20%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color:rgb(34, 34, 34) ;
+    padding: 30px 50px 100px 30px;
+    display: block;
+}
+.login-box h2{
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+}
+.login-box p{
+  color: rgba(255, 255, 255, 0.555);
+}
+.loginText{
+  margin-bottom: 70px;
+  line-height: 12px;
+}
+.login-box label{
+    color: rgba(255, 255, 255, 0.74);
+}
+.login-box button{
+    border: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 3px;
+    transition: 0.2s;
+    color: white;
+    width: 100%;
+}
+.login-box button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1100px) {
+  .login-box{
+    width: 60%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color:rgb(34, 34, 34) ;
+    padding: 30px 10px 100px 10px;
+    display: block;
+}
+ 
+}

@@ -1,0 +1,49 @@
+.movies{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+}
+
+.box{
+    width: 80%;
+    text-align: center;
+    border: 1px solid white;
+    margin: 30px auto;
+    height:900px;
+    color: white;
+    margin: 50px;
+    padding: 20px 50px;
+    font-family: "Montserrat",sans-serif;
+}
+    
+.box img{
+    width: auto;
+    height: 200px ;
+}
+.box h1{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    color:#FFBA49;
+}
+.box button{
+   
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border:none;
+}
+.delete{
+    cursor: pointer;
+    width: 30%;
+    background-color: rgb(175, 54, 54);
+    margin: 20px auto;
+    font-family: "Montserrat",sans-serif;
+    transition: .3s;
+    border-radius: 3px;
+    position: relative;
+}
+
+.delete:hover{
+    transform: scale(1.1);
+    background-color: red;
+}

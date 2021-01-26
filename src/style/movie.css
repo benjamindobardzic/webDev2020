@@ -1,0 +1,41 @@
+header{
+    height: 500px;
+}
+.navigationOuter{
+    background-color: #1d1d1d;
+    height: 100%;
+    padding: 30px;
+}
+.navigation{
+    margin: 0 auto;
+}
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+h1{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    font-size: 8rem;
+}
+p{
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+}
+.container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.description{
+    line-height: 30px;
+    margin-top: 50px;
+}
+.description p:first-of-type{
+    text-decoration: underline;
+}

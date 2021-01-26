@@ -1,0 +1,81 @@
+body{
+   height: 100vh;
+   background-color: black;
+       background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+body h1{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    color: white;
+    text-shadow: 1px 1px 6px 10px rgba(0, 0, 0, 0.246);
+    padding-top: 200px;
+    text-align: center;
+}
+body h3{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.buttons a{
+    display: block;
+    width: 30%;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    margin: 50px auto;
+    border: 1px solid white;
+    padding: 10px 0px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.buttons a:hover{
+    text-decoration: none;
+    background-color: #FFBA49;
+    color: black;
+    font-weight: 700;
+}
+
+.logout{
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 150px;
+    border-radius: 2px;
+    transition: .4s;
+}
+.logout:hover{
+    background-color: #FFBA49;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+.logout:hover a{
+    color: white;
+   
+}
+.logout a{
+    color: #FFBA49;
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0px 3px;
+}
+.logout i{
+    color: white;
+}
+
+
