@@ -21,10 +21,4 @@
 		header('location:admin_login.php?info=wrongCredentials');
 	}
 
-
-
-
-
-
-
 ?>

@@ -14,6 +14,18 @@ $filmovi = array();
 while ($row = mysqli_fetch_assoc($final)) {
     $filmovi[] = $row;
 }
+if(isset($_REQUEST['pretrazi'])){
+
+    if(empty($_REQUEST['kveri'])){
+        header('location: ./index.php');
+    }else{
+    $kveri = htmlspecialchars($_POST['kveri']);
+    $_SESSION['kveri'] = $database -> real_escape_string($kveri);
+    header("location:./Filmovi/pretraga.php"); 
+    }
+   
+}
+
 mysqli_close($database)
 
 
@@ -64,9 +76,9 @@ mysqli_close($database)
 
                     </ul>
                     <div class="search mr-4">
-                        <form action="POST" method="./Filmovi/pretraga.php">
-                            <input type="text" value="" placeholder="Unesite naziv filma za pretragu">
-                            <input type="submit" value="Search">
+                        <form action="index.php" method="POST">
+                            <input type="text" value="" placeholder="Unesite naziv filma za pretragu" name="kveri">
+                            <input type="submit" name="pretrazi">
                         </form>
                     </div>
                     <a href="./Filmovi/admin_login.php">
